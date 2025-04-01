@@ -1,144 +1,55 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Total Finance Resolver - Premium Financial Modeling, Valuation, M&A and Algorithmic Strategy Services"/>
-  <meta name="keywords" content="financial modeling UK, startup valuation London, pitch deck consultant, algo trading bot development, Dubai, Singapore, London"/>
-  <meta name="author" content="Total Finance Resolver">
-  <title>Total Finance Resolver | Financial Modeling & Strategy Experts</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #ffffff;
-      color: #333;
-    }
-    header {
-      background: url('https://images.unsplash.com/photo-1532614338840-ab30cf10ed44?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      color: #222;
-      text-align: center;
-    }
-    header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 3rem;
-      color: #444;
-      background-color: rgba(200, 150, 255, 0.2);
-      padding: 1rem 2rem;
-      border-radius: 12px;
-    }
-    nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background: rgba(255,255,255,0.9);
-      display: flex;
-      justify-content: center;
-      padding: 1rem;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-      z-index: 1000;
-    }
-    nav a {
-      margin: 0 1rem;
-      text-decoration: none;
-      color: #6c63ff;
-      font-weight: bold;
-    }
-    section {
-      padding: 4rem 2rem;
-      max-width: 1100px;
-      margin: auto;
-    }
-    .services {
-      display: flex;
-      justify-content: space-between;
-      gap: 2rem;
-      flex-wrap: wrap;
-    }
-    .card {
-      flex: 1 1 30%;
-      background: #f8f8f8;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-      transition: 0.3s ease;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-      background: #fef7e0;
-    }
-    .card h3 {
-      color: #a8862c;
-    }
-    .cta {
-      text-align: center;
-      padding: 3rem 2rem;
-      background: #f9f3ff;
-    }
-    .cta button {
-      background-color: #a8862c;
-      color: white;
-      font-size: 1rem;
-      padding: 0.8rem 2rem;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background: #fafafa;
-      color: #888;
-    }
-  </style>
+  <title>Total Finance Resolver | Boutique Financial Advisory</title>
+  <meta name="description" content="Boutique financial consulting for startups, institutions, and traders. High-trust, elite financial models, valuations, M&A, and automation services.">
+  <meta name="keywords" content="financial modeling UK, valuation firm London, pitch deck consultant, global investment advisory, M&A support, algorithmic trading, TradingView bot, hedge fund automation, startup valuation Dubai, investment consulting Singapore">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <nav>
+    <ul>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 
-<nav>
-  <a href="#services">Services</a>
-  <a href="#blog">Blog</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-<header>
-  <h1>We Don’t Guess Your Valuation.<br>We Resolve It.</h1>
-</header>
-
-<section id="services">
-  <h2 style="text-align:center; font-family:'Playfair Display', serif; font-size:2rem; color:#333;">Our Verticals</h2>
-  <div class="services">
-    <div class="card">
-      <h3>Financial Firms</h3>
-      <p>White-labeled valuation models, due diligence reports, and investor documents for your firm’s bandwidth boost.</p>
+  <header>
+    <div class="hero-overlay"></div>
+    <video autoplay muted loop playsinline>
+      <source src="assets/background.mp4" type="video/mp4">
+    </video>
+    <div class="hero-content">
+      <h1>We Don’t Guess Your Valuation.<br>We Resolve It.</h1>
+      <p>Elite financial support for Founders, Institutions, Traders & Investors</p>
+      <a href="#" class="cta">Unlock Your Free £250 Consultation</a>
     </div>
-    <div class="card">
-      <h3>Founders & Startups</h3>
-      <p>Clear and actionable business valuations, investor-ready pitch decks, and strategic forecasts that attract capital.</p>
+  </header>
+
+  <section class="verticals">
+    <h2>Our Verticals</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Financial Firms</h3>
+        <p>White-labeled valuation models, due diligence reports, and investor documents for bandwidth boost.</p>
+      </div>
+      <div class="card">
+        <h3>Founders & Startups</h3>
+        <p>Business valuations, pitch decks, and forecasts that convert capital.</p>
+      </div>
+      <div class="card">
+        <h3>Algorithmic Trading</h3>
+        <p>Turn strategies into bots for TradingView, MT5, NinjaTrader. Backtesting + deployment.</p>
+      </div>
     </div>
-    <div class="card">
-      <h3>Algorithmic Trading</h3>
-      <p>Get your strategy coded into bots for TradingView, MT5, NinjaTrader and more. Backtesting + deployment included.</p>
-    </div>
-  </div>
-</section>
+  </section>
 
-<section class="cta">
-  <p style="font-size:1.5rem; font-family:'Playfair Display', serif;">Need clarity on your next move?</p>
-  <button onclick="window.location.href='mailto:hello@financeresolver.com'">Book a Free Review</button>
-</section>
-
-<footer>
-  &copy; 2024 Total Finance Resolver. Built for London, Dubai, Singapore. All rights reserved.
-</footer>
-
+  <footer>
+    <p>© 2025 Total Finance Resolver. Serving London, Dubai, EU, Singapore.</p>
+  </footer>
 </body>
 </html>
