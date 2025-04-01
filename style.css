@@ -1,65 +1,92 @@
 
 body {
-  margin: 0;
-  font-family: 'Playfair Display', serif;
-  background: #fefefe;
-  color: #1c1c1c;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: #111;
+    background-color: #fefefe;
 }
 header {
-  background: white;
-  display: flex;
-  justify-content: space-between;
-  padding: 1em 2em;
-  font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    font-family: 'Playfair Display', serif;
 }
-header .brand {
-  color: gold;
-  font-size: 1.5em;
+.brand {
+    color: #B7950B;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
-nav ul {
-  display: flex;
-  gap: 1.5em;
-  list-style: none;
+nav a {
+    margin-left: 2rem;
+    color: #B7950B;
+    text-decoration: none;
+    transition: 0.3s;
 }
-nav ul li a {
-  color: goldenrod;
-  text-decoration: none;
+nav a:hover {
+    background-color: #f0e6f6;
+    color: black;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
 }
-nav ul li a:hover {
-  color: black;
-  background-color: #e8d6ff;
-  padding: 4px 8px;
-  border-radius: 5px;
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
 }
-.carousel {
-  width: 100%;
-  overflow: hidden;
+.carousel img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 2rem;
 }
-.carousel-images {
-  display: flex;
-  animation: slide 20s infinite;
+.hero-text h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
-.carousel-images img {
-  width: 100vw;
-  height: 80vh;
-  object-fit: cover;
+.hero-text button {
+    background-color: #F1C40F;
+    border: none;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
 }
-@keyframes slide {
-  0% {transform: translateX(0);}
-  25% {transform: translateX(-100vw);}
-  50% {transform: translateX(-200vw);}
-  75% {transform: translateX(-300vw);}
-  100% {transform: translateX(0);}
+.verticals {
+    padding: 3rem 2rem;
+    text-align: center;
 }
-main {
-  text-align: center;
-  padding: 2em;
+.verticals h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
 }
-.cta {
-  background-color: gold;
-  border: none;
-  padding: 1em 2em;
-  font-size: 1em;
-  font-weight: bold;
-  margin-top: 1em;
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+    max-width: 280px;
+    transition: 0.3s;
+}
+.card:hover {
+    border-bottom: 4px solid gold;
+}
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 4rem;
+    padding: 2rem;
 }
