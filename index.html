@@ -10,40 +10,42 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
+  <header class="navbar">
+    <div class="brand-name">Total Finance Resolver</div>
+    <nav>
+      <a href="#">Services</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
 
-  <header>
-    <div class="hero-overlay"></div>
-    <video autoplay muted loop playsinline>
-      <source src="assets/background.mp4" type="video/mp4">
+  <section class="hero">
+    <video autoplay muted loop id="background-video">
+      <source src="assets/background.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
     </video>
+    <div class="overlay"></div>
     <div class="hero-content">
       <h1>We Don’t Guess Your Valuation.<br>We Resolve It.</h1>
       <p>Elite financial support for Founders, Institutions, Traders & Investors</p>
       <a href="#" class="cta">Unlock Your Free £250 Consultation</a>
     </div>
-  </header>
+  </section>
 
   <section class="verticals">
     <h2>Our Verticals</h2>
     <div class="cards">
-      <div class="card">
+      <div class="vertical-card">
         <h3>Financial Firms</h3>
-        <p>White-labeled valuation models, due diligence reports, and investor documents for bandwidth boost.</p>
+        <p>White-labeled models, diligence, and investor-ready docs.</p>
       </div>
-      <div class="card">
+      <div class="vertical-card">
         <h3>Founders & Startups</h3>
         <p>Business valuations, pitch decks, and forecasts that convert capital.</p>
       </div>
-      <div class="card">
+      <div class="vertical-card">
         <h3>Algorithmic Trading</h3>
-        <p>Turn strategies into bots for TradingView, MT5, NinjaTrader. Backtesting + deployment.</p>
+        <p>Turn strategies into bots for TradingView, MT5, NinjaTrader & more.</p>
       </div>
     </div>
   </section>
