@@ -2,56 +2,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Total Finance Resolver</title>
-    <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Total Finance Resolver</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <div class="brand">Total Finance Resolver</div>
-        <nav>
-            <a href="#">Services</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
+  <header>
+    <div class="brand">Total Finance Resolver</div>
+    <nav>
+      <a href="#">Services</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
 
-    <section class="hero">
-        <div class="carousel">
-            <img src="assets/london.jpg" alt="London"/>
-        </div>
-        <div class="hero-text">
-            <h1>We Don’t Guess Your Valuation.<br/>We Resolve It.</h1>
-            <p>Elite financial support for Founders, Institutions, Traders & Investors</p>
-            <button>Unlock Your Free £250 Consultation</button>
-        </div>
-    </section>
+  <section class="hero">
+    <div class="carousel">
+      <img class="slide" src="assets/London.png" alt="London">
+      <img class="slide" src="assets/Dubai.png" alt="Dubai">
+      <img class="slide" src="assets/Singapore.png" alt="Singapore">
+      <img class="slide" src="assets/Frankfurt.png" alt="Frankfurt">
+    </div>
+    <div class="overlay">
+      <h1>We Don’t Guess Your Valuation. We Resolve It.</h1>
+      <p>Elite consulting for Founders, Traders, Firms & Global Investors</p>
+      <button>Unlock Your Free £250 Consultation</button>
+    </div>
+  </section>
 
-    <section class="verticals">
-        <h2>Our Verticals</h2>
-        <div class="cards">
-            <div class="card">
-                <h3>Financial Firms</h3>
-                <p>White-labeled models, diligence, and investor-ready docs.</p>
-            </div>
-            <div class="card">
-                <h3>Founders & Startups</h3>
-                <p>Business valuations, pitch decks, and forecasts that convert capital.</p>
-            </div>
-            <div class="card">
-                <h3>Algorithmic Trading</h3>
-                <p>Turn strategies into bots for TradingView, MT5, NinjaTrader & more.</p>
-            </div>
-            <div class="card">
-                <h3>Global Investment Solutions</h3>
-                <p>Offshore consulting, portfolio strategy, and high-trust advisory.</p>
-            </div>
-        </div>
-    </section>
+  <section class="verticals">
+    <h2>Our Verticals</h2>
+    <div class="cards">
+      <div class="card">Financial Firms</div>
+      <div class="card">Founders & Startups</div>
+      <div class="card">Algorithmic Trading</div>
+      <div class="card">Global Investment Solutions</div>
+    </div>
+  </section>
 
-    <footer>
-        © 2025 Total Finance Resolver. Serving London, Dubai, EU, Singapore.
-    </footer>
+  <footer>
+    Serving London, Dubai, EU & Singapore — Total Finance Resolver © 2025
+  </footer>
+
+  <script>
+    let index = 0;
+    const slides = document.querySelectorAll('.slide');
+    setInterval(() => {
+      slides.forEach((img, i) => img.style.display = i === index ? 'block' : 'none');
+      index = (index + 1) % slides.length;
+    }, 6000);
+  </script>
 </body>
 </html>
