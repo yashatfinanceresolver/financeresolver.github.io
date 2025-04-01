@@ -3,55 +3,65 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Total Finance Resolver</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Elite consulting for Founders, Traders, Firms & Global Investors." />
+  <title>Total Finance Resolver™</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header>
-    <div class="brand">Total Finance Resolver</div>
+  <header class="navbar">
+    <div class="brand">
+      <span class="brand-name">Total Finance Resolver<span class="tm">™</span></span>
+    </div>
     <nav>
-      <a href="#">Services</a>
-      <a href="#">Blog</a>
-      <a href="#">Contact</a>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
   <section class="hero">
-    <div class="carousel">
-      <img class="slide" src="assets/London.png" alt="London">
-      <img class="slide" src="assets/Dubai.png" alt="Dubai">
-      <img class="slide" src="assets/Singapore.png" alt="Singapore">
-      <img class="slide" src="assets/Frankfurt.png" alt="Frankfurt">
-    </div>
-    <div class="overlay">
+    <div class="hero-text">
       <h1>We Don’t Guess Your Valuation. We Resolve It.</h1>
       <p>Elite consulting for Founders, Traders, Firms & Global Investors</p>
-      <button>Unlock Your Free £250 Consultation</button>
+      <a href="#contact" class="cta">Unlock Your Free £250 Consultation</a>
+    </div>
+    <div class="hero-slider">
+      <img src="assets/Dubai.png" alt="Dubai" class="slide active" />
+      <img src="assets/Frankfurt.png" alt="Frankfurt" class="slide" />
+      <img src="assets/London.png" alt="London" class="slide" />
+      <img src="assets/Singapore.png" alt="Singapore" class="slide" />
     </div>
   </section>
 
-  <section class="verticals">
+  <section class="verticals" id="services">
     <h2>Our Verticals</h2>
     <div class="cards">
-      <div class="card">Financial Firms</div>
-      <div class="card">Founders & Startups</div>
-      <div class="card">Algorithmic Trading</div>
-      <div class="card">Global Investment Solutions</div>
+      <div class="card"><h3>Financial Firms</h3><p>White-labeled valuation models, diligence reports & investor docs.</p></div>
+      <div class="card"><h3>Founders & Startups</h3><p>Valuations, pitch decks, forecasts to convert capital.</p></div>
+      <div class="card"><h3>Algorithmic Trading</h3><p>Bot development for TradingView, MT5, NinjaTrader & more.</p></div>
+      <div class="card"><h3>Global Investment Solutions</h3><p>Offshore strategy, tax, and high-trust portfolio consulting.</p></div>
     </div>
   </section>
 
   <footer>
-    Serving London, Dubai, EU & Singapore — Total Finance Resolver © 2025
+    <p>&copy; 2025 Total Finance Resolver. Serving London, Dubai, EU, Singapore.</p>
   </footer>
-
   <script>
-    let index = 0;
-    const slides = document.querySelectorAll('.slide');
+    let current = 0;
+    const slides = document.querySelectorAll(".slide");
+    const interval = 6000;
+
     setInterval(() => {
-      slides.forEach((img, i) => img.style.display = i === index ? 'block' : 'none');
-      index = (index + 1) % slides.length;
-    }, 6000);
+      slides[current].classList.remove("active");
+      current = (current + 1) % slides.length;
+      slides[current].classList.add("active");
+    }, interval);
   </script>
 </body>
 </html>
